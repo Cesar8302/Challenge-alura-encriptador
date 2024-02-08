@@ -18,7 +18,7 @@ function capturaTexto(){
         captura = queCodigoEs(mensajeEncriptado[buscaIndice]);
         console.log(captura);
         seudoCadena = seudoCadena + captura;
-        buscaIndice++; 
+        console.log(seudoCadena);
         }
         seudoCadena = seudoCadena + mensajeEncriptado [buscaIndice];
         console.log(seudoCadena);
