@@ -18,7 +18,8 @@ function cortaPalabra(posicion, mensajeCompleto, codigo){
     for (inicio; inicio < mensajeCompleto.length; inicio++) {
         palabraCortadaDerecha = palabraCortadaDerecha + mensajeCompleto[inicio];
     }
-
+    console.log(palabraCortadaDerecha);
+    console.log(palabraCortadaIzquierda);
     mensajeEncriptado = palabraCortadaIzquierda + codigo + palabraCortadaDerecha;
     return codigo.length;
 }
