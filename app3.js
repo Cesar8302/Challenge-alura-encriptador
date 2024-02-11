@@ -1,9 +1,4 @@
 let mensajeEncriptado = [];
-let codigo = [['a' , 'ai'],
-            ['e' , 'enter'],
-            ['i' , 'imes'],
-            ['o' , 'ober'],
-            ['u' , 'ufat']];
 let codigoDesencriptado = ['a', 'e', 'i', 'o', 'u'];
 let codigoEncriptado = ['ai', 'enter', 'imes', 'ober', 'ufat']
 
