@@ -14,15 +14,16 @@
     <main>
         <section class="seccion1">
             <div class="contenedorcajatexto">
-                <textarea placeholder="Ingrese el texto aqui" class="cajatexto"></textarea>
+                <textarea placeholder="Ingrese el texto aqui" id="mensajeEnviado" class="cajatexto"></textarea>
             </div>
             <div class="alerta">
                 <img src="Imagenes/alerta.svg" alt="alerta">
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="contenedor-botones">
-                <input type="button" class="btn-encriptar" value="Encriptar">
-                <input type="button" class="btn-desencriptar" value="Desencriptar">
+                <button type="button" onclick="encriptador();" class="btn-encriptar" value="Encriptar">Encriptar</button>
+                <button type="button" onclick="desencriptador();" class="btn-desencriptar" value="Desencriptar">Desencriptar</button>
+        
             </div>
         </section>
         <section class="seccion2">
@@ -42,6 +43,6 @@
 
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="appfinal.js"></script>
 </body>
 </html>
