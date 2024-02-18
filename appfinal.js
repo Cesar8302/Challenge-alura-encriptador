@@ -10,6 +10,7 @@ const btnCopiar = document.querySelector(".btn-copiar");
 function desencriptador(){
     mensajeEncriptado = document.querySelector(".cajatexto").value;
     ocultarImagen();
+
     let captura = [''];
     let longitud = 0;
     let seudoCadena = [''];
@@ -46,14 +47,17 @@ function queCodigoEsParaDesencriptar(letra, indice){
     }
     if (cadena==cadenaEnviada){
         return [codigoDesencriptado[iterindice], cadena.length-1];
-    }else{
+    }else if (cadena!=cadenaEnviada&&letra==codigoEncriptado[iterindice]){
         return ['',0];
+    }else{
+        return [letra,0];
     }
 }
 
 function encriptador(){
     mensajeEncriptado = document.querySelector(".cajatexto").value;
     ocultarImagen();
+
     let captura = [''];
     let seudoCadena = [''];
 
@@ -80,13 +84,11 @@ function queCodigoEsParaEncriptar(letra){
     }
 }
 
-
 btnCopiar.addEventListener("click", copiar = () => {
     var contenido = document.querySelector(".texto-resultado").textContent;
     navigator.clipboard.writeText(contenido);
     }
 )
-
 
 function ocultarImagen(){
     dibujo.classList.add("ocultar");
