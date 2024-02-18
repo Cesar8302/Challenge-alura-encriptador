@@ -2,14 +2,14 @@ let mensajeEncriptado = [];
 let codigoDesencriptado = ['a', 'e', 'i', 'o', 'u'];
 let codigoEncriptado = ['ai', 'enter', 'imes', 'ober', 'ufat']
 
-let munieco = document.querySelector(".contenedormunieco");
+let dibujo = document.querySelector(".contenedordibujo");
 let contenedor = document.querySelector(".contenedor-parrafo");
 let resultado = document.querySelector(".texto-resultado");
+const btnCopiar = document.querySelector(".btn-copiar"); 
 
 function desencriptador(){
     mensajeEncriptado = document.querySelector(".cajatexto").value;
-    ocultarAdelante();
-    console.log(mensajeEncriptado);
+    ocultarImagen();
     let captura = [''];
     let longitud = 0;
     let seudoCadena = [''];
@@ -28,7 +28,6 @@ function desencriptador(){
             seudoCadena = seudoCadena + mensajeEncriptado[buscaIndice];
         }
     }
-    console.log(seudoCadena);
     resultado.textContent = seudoCadena;
 }
 
@@ -54,7 +53,7 @@ function queCodigoEsParaDesencriptar(letra, indice){
 
 function encriptador(){
     mensajeEncriptado = document.querySelector(".cajatexto").value;
-    ocultarAdelante();
+    ocultarImagen();
     let captura = [''];
     let seudoCadena = [''];
 
@@ -81,7 +80,15 @@ function queCodigoEsParaEncriptar(letra){
     }
 }
 
-function ocultarAdelante(){
-    munieco.classList.add("ocultar");
+
+btnCopiar.addEventListener("click", copiar = () => {
+    var contenido = document.querySelector(".texto-resultado").textContent;
+    navigator.clipboard.writeText(contenido);
+    }
+)
+
+
+function ocultarImagen(){
+    dibujo.classList.add("ocultar");
     contenedor.classList.add("ocultar");
 }
