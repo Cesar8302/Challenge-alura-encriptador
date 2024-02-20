@@ -30,7 +30,7 @@ main{
 
 .contenedorcajatexto{
     position: absolute;
-    left: 200px;
+    left: 120px;
     top: 100px;
     padding-left: 100px;
     width: 1080px;
@@ -44,7 +44,7 @@ main{
     background-color: #cbcbdc;
     cursor: pointer;
     color: #0A3871;
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
@@ -58,7 +58,7 @@ main{
 
 .alerta{
     position: absolute;
-    top: 750px;
+    top: 670px;
     left: 370px;
     display: flex;
     color: #495057;
@@ -66,10 +66,10 @@ main{
 
 .contenedor-botones{
     position: absolute;
-    top: 800px;
+    top: 700px;
     height: 80px;
-    padding-left: 15%;
-    padding-top: 15px;
+    padding-left: 10%;
+    padding-top: 10px;
 }
 
 .btn-encriptar{
@@ -102,9 +102,9 @@ main{
 .seccion2{
     display: block;
     position: relative;
-    width: 400px;
+    width: 380px;
     height: 700px;
-    right: 80px;
+    right: 50px;
     padding-right: 20px;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -163,9 +163,9 @@ main{
     display: flex;
     position: absolute;
     bottom: 400px;
-    top: 700px;
+    top: 670px;
     background-color: aqua;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 .btn-copiar{
