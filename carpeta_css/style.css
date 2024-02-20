@@ -38,15 +38,18 @@ main{
 }
 
 .cajatexto{
-    width: 80%;
-    height: 100%;
+    width: 50%;
+    height: 90%;
     border: none;
-    background-color: #f4f4fc;
+    background-color: #cbcbdc;
     cursor: pointer;
     color: #0A3871;
     font-size: 32px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
 }
 
 .cajatexto::placeholder{
@@ -100,8 +103,8 @@ main{
     display: block;
     position: relative;
     width: 400px;
-    height: 840px;
-    right: 200px;
+    height: 700px;
+    right: 80px;
     padding-right: 20px;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -143,7 +146,7 @@ main{
 
 .contenedor-resultado{
     position: absolute;
-    bottom: 330px;
+    bottom: 200px;
     width: 320px;
     height: 450px;
     padding: 0;
@@ -152,8 +155,8 @@ main{
 }
 
 .contenedor-resultado p{
-    color: #495057;
-    font-size: 25px;
+    color: #4a1658;
+    font-size: 20px;
 }
 
 .contenedor-copiar{
