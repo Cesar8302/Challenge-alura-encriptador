@@ -7,8 +7,17 @@ let contenedor = document.querySelector(".contenedor-parrafo");
 let resultado = document.querySelector(".texto-resultado");
 const btnCopiar = document.querySelector(".btn-copiar"); 
 
+function verificaTexto(){
+    if(/[^a-z\s]/.test(mensajeEncriptado)){
+        alert('El texto debe ser solamente minusculas!!!');
+        mensajeEncriptado=[];
+    }
+}
+
+
 function desencriptador(){
     mensajeEncriptado = document.querySelector(".cajatexto").value;
+    verificaTexto();
     ocultarImagen();
 
     let captura = [''];
@@ -56,6 +65,7 @@ function queCodigoEsParaDesencriptar(letra, indice){
 
 function encriptador(){
     mensajeEncriptado = document.querySelector(".cajatexto").value;
+    verificaTexto();
     ocultarImagen();
 
     let captura = [''];
